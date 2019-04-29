@@ -1,0 +1,5 @@
+#!/bin/bash 
+archive_dir="/tmp" 
+archive_path="$archive_dir/backup_$(date +%Y%m%d%H%M%S).tar.gz" 
+echo "Ecriture [$archive_path] en cours..." 
+tar cvzf $archive_path /var/www

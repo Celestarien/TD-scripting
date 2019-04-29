@@ -1,0 +1,31 @@
+# !/bin/bash
+# ===============================================================================
+
+
+nombre=1111111110                         # variable contenant le nombre donné par le joueur
+nbtentative=0                       # nombre de tentatives effectuées avant de trouver le bon nombre
+nombre_aleatoire=$RANDOM      # nombre aléatoire à trouver
+
+
+
+while [ $nombre -ne $nombre_aleatoire ]
+do
+  echo -n "Devinez ? " ; read nombre  # Affiche la chaine de caractère "Devinez ? " et demande à l'utilisateur d'entrée la valeur d'un nombre qui sera stocké dans la variable "nombre"
+  if test -n "$nombre" -a $nombre -eq $nombre 2> /dev/null # Regarde si la variable "nombre" ne contient pas de lettre
+  then
+    #nombre="${nombre// }" #Supprime les espaces si il y en a !
+    if [ "$nombre" -lt $nombre_aleatoire ]  # Si la variable "nombre" est inférieur au nombre aléatoire
+    then
+       echo "C'est plus grand!"
+    elif [ "$nombre" -gt $nombre_aleatoire ]  # Sinon si la variable "nombre" est supérieur au nombre aléatoire
+    then
+       echo "C'est plus petit!"
+    fi
+  else
+      echo "Ceci n'est pas un chiffre, sort de ce jeu !"  
+  fi
+ nbtentative=$(( $nbtentative + 1 )) # Nombre trouvé
+done
+
+echo "Bravo!! Vous avez deviné $nombre_aleatoire en $nbtentative coups." # Affiche le nombre qui étais à trouvé et le nombre de tentative que l'utilisateur à du faire pour le trouver 
+exit 0 #Quitte le script
