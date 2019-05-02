@@ -4,7 +4,7 @@
 
 Le princie du script est simple, il sauvegarde un nombre aléatoire entre 0 et 1111111110. Par la suite l'utilisateur propose un nombre (ou chiffre) afin de retrouver le nombre mystère à chacune des proposition votre scripte répondra si le nombre chercher est plus grand ou plus petit que celui proposer.  
 
-⛔ Attention : Le nombre de tentavive sera stocké par le programme donc essayez d'en faire peu et de trouver bon.
+#### ⛔ Attention : Le nombre de tentavive sera stocké par le programme donc essayez d'en faire peu et de trouver bon.
 
 ## Un outils de sauvegarde
 
