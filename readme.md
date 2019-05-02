@@ -18,4 +18,4 @@ Celui-ci est un script qui prend en argument une url youtube et qui récupère l
 
 Ce script est exactement comme celui de Youtube-dl sauf que ce dernier permet de télécharger n'importe quel audio d'une vidéo, l'utilisateur à le choix contrairement au précédent. C'est un petit bonus cadeau. 😉  
 
-###### Pour plus de détails sur les scripts, je vous invites à aller voir leurs codes où il y a pas mal de chose expliquées.
+###### Pour plus de détails sur certains scripts, je vous invites à aller voir leurs codes où il y a pas mal de chose expliquées.
