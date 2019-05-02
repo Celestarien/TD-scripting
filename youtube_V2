@@ -1,0 +1,5 @@
+# !/bin/bash
+
+echo -n "Insérez l'url de la vidéo dont vous souhaité récuperer l'audio : " ; read musique    # Stock l'url de la musique dans la variabme "musique"
+
+youtube-dl -x $musique		# Télécharge le contenu audio de la vidéo dont le lien est contenu dans "$musique"
